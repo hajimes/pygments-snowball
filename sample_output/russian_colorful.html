@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=latin1">
+  <style type="text/css">
+td.linenos { background-color: #f0f0f0; padding-right: 10px; }
+span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
+pre { line-height: 125%; }
+body .hll { background-color: #ffffcc }
+body  { background: #ffffff; }
+body .c { color: #888888 } /* Comment */
+body .err { color: #FF0000; background-color: #FFAAAA } /* Error */
+body .k { color: #008800; font-weight: bold } /* Keyword */
+body .o { color: #333333 } /* Operator */
+body .cm { color: #888888 } /* Comment.Multiline */
+body .cp { color: #557799 } /* Comment.Preproc */
+body .c1 { color: #888888 } /* Comment.Single */
+body .cs { color: #cc0000; font-weight: bold } /* Comment.Special */
+body .gd { color: #A00000 } /* Generic.Deleted */
+body .ge { font-style: italic } /* Generic.Emph */
+body .gr { color: #FF0000 } /* Generic.Error */
+body .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+body .gi { color: #00A000 } /* Generic.Inserted */
+body .go { color: #888888 } /* Generic.Output */
+body .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+body .gs { font-weight: bold } /* Generic.Strong */
+body .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+body .gt { color: #0044DD } /* Generic.Traceback */
+body .kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+body .kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+body .kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+body .kp { color: #003388; font-weight: bold } /* Keyword.Pseudo */
+body .kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+body .kt { color: #333399; font-weight: bold } /* Keyword.Type */
+body .m { color: #6600EE; font-weight: bold } /* Literal.Number */
+body .s { background-color: #fff0f0 } /* Literal.String */
+body .na { color: #0000CC } /* Name.Attribute */
+body .nb { color: #007020 } /* Name.Builtin */
+body .nc { color: #BB0066; font-weight: bold } /* Name.Class */
+body .no { color: #003366; font-weight: bold } /* Name.Constant */
+body .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+body .ni { color: #880000; font-weight: bold } /* Name.Entity */
+body .ne { color: #FF0000; font-weight: bold } /* Name.Exception */
+body .nf { color: #0066BB; font-weight: bold } /* Name.Function */
+body .nl { color: #997700; font-weight: bold } /* Name.Label */
+body .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+body .nt { color: #007700 } /* Name.Tag */
+body .nv { color: #996633 } /* Name.Variable */
+body .ow { color: #000000; font-weight: bold } /* Operator.Word */
+body .w { color: #bbbbbb } /* Text.Whitespace */
+body .mf { color: #6600EE; font-weight: bold } /* Literal.Number.Float */
+body .mh { color: #005588; font-weight: bold } /* Literal.Number.Hex */
+body .mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+body .mo { color: #4400EE; font-weight: bold } /* Literal.Number.Oct */
+body .sb { background-color: #fff0f0 } /* Literal.String.Backtick */
+body .sc { color: #0044DD } /* Literal.String.Char */
+body .sd { color: #DD4422 } /* Literal.String.Doc */
+body .s2 { background-color: #fff0f0 } /* Literal.String.Double */
+body .se { color: #666666; font-weight: bold; background-color: #fff0f0 } /* Literal.String.Escape */
+body .sh { background-color: #fff0f0 } /* Literal.String.Heredoc */
+body .si { background-color: #eeeeee } /* Literal.String.Interpol */
+body .sx { color: #DD2200; background-color: #fff0f0 } /* Literal.String.Other */
+body .sr { color: #000000; background-color: #fff0ff } /* Literal.String.Regex */
+body .s1 { background-color: #fff0f0 } /* Literal.String.Single */
+body .ss { color: #AA6600 } /* Literal.String.Symbol */
+body .bp { color: #007020 } /* Name.Builtin.Pseudo */
+body .vc { color: #336699 } /* Name.Variable.Class */
+body .vg { color: #dd7700; font-weight: bold } /* Name.Variable.Global */
+body .vi { color: #3333BB } /* Name.Variable.Instance */
+body .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
+
+  </style>
+</head>
+<body>
+<h2></h2>
+
+<div class="highlight"><pre><span class="kd">stringescapes</span> <span class="p">{}</span>
+
+<span class="cm">/* the 32 Cyrillic letters in Unicode */</span>
+
+<span class="kd">stringdef</span> <span class="n">a</span>    <span class="mh">hex</span> <span class="s">&#39;430&#39;</span>
+<span class="kd">stringdef</span> <span class="n">b</span>    <span class="mh">hex</span> <span class="s">&#39;431&#39;</span>
+<span class="kd">stringdef</span> <span class="n">v</span>    <span class="mh">hex</span> <span class="s">&#39;432&#39;</span>
+<span class="kd">stringdef</span> <span class="n">g</span>    <span class="mh">hex</span> <span class="s">&#39;433&#39;</span>
+<span class="kd">stringdef</span> <span class="n">d</span>    <span class="mh">hex</span> <span class="s">&#39;434&#39;</span>
+<span class="kd">stringdef</span> <span class="n">e</span>    <span class="mh">hex</span> <span class="s">&#39;435&#39;</span>
+<span class="kd">stringdef</span> <span class="n">zh</span>   <span class="mh">hex</span> <span class="s">&#39;436&#39;</span>
+<span class="kd">stringdef</span> <span class="n">z</span>    <span class="mh">hex</span> <span class="s">&#39;437&#39;</span>
+<span class="kd">stringdef</span> <span class="n">i</span>    <span class="mh">hex</span> <span class="s">&#39;438&#39;</span>
+<span class="kd">stringdef</span> <span class="n">i`</span>   <span class="mh">hex</span> <span class="s">&#39;439&#39;</span>
+<span class="kd">stringdef</span> <span class="n">k</span>    <span class="mh">hex</span> <span class="s">&#39;43A&#39;</span>
+<span class="kd">stringdef</span> <span class="n">l</span>    <span class="mh">hex</span> <span class="s">&#39;43B&#39;</span>
+<span class="kd">stringdef</span> <span class="n">m</span>    <span class="mh">hex</span> <span class="s">&#39;43C&#39;</span>
+<span class="kd">stringdef</span> <span class="n">n</span>    <span class="mh">hex</span> <span class="s">&#39;43D&#39;</span>
+<span class="kd">stringdef</span> <span class="n">o</span>    <span class="mh">hex</span> <span class="s">&#39;43E&#39;</span>
+<span class="kd">stringdef</span> <span class="n">p</span>    <span class="mh">hex</span> <span class="s">&#39;43F&#39;</span>
+<span class="kd">stringdef</span> <span class="n">r</span>    <span class="mh">hex</span> <span class="s">&#39;440&#39;</span>
+<span class="kd">stringdef</span> <span class="n">s</span>    <span class="mh">hex</span> <span class="s">&#39;441&#39;</span>
+<span class="kd">stringdef</span> <span class="n">t</span>    <span class="mh">hex</span> <span class="s">&#39;442&#39;</span>
+<span class="kd">stringdef</span> <span class="n">u</span>    <span class="mh">hex</span> <span class="s">&#39;443&#39;</span>
+<span class="kd">stringdef</span> <span class="n">f</span>    <span class="mh">hex</span> <span class="s">&#39;444&#39;</span>
+<span class="kd">stringdef</span> <span class="n">kh</span>   <span class="mh">hex</span> <span class="s">&#39;445&#39;</span>
+<span class="kd">stringdef</span> <span class="n">ts</span>   <span class="mh">hex</span> <span class="s">&#39;446&#39;</span>
+<span class="kd">stringdef</span> <span class="n">ch</span>   <span class="mh">hex</span> <span class="s">&#39;447&#39;</span>
+<span class="kd">stringdef</span> <span class="n">sh</span>   <span class="mh">hex</span> <span class="s">&#39;448&#39;</span>
+<span class="kd">stringdef</span> <span class="n">shch</span> <span class="mh">hex</span> <span class="s">&#39;449&#39;</span>
+<span class="kd">stringdef</span> <span class="n">&quot;</span>    <span class="mh">hex</span> <span class="s">&#39;44A&#39;</span>
+<span class="kd">stringdef</span> <span class="n">y</span>    <span class="mh">hex</span> <span class="s">&#39;44B&#39;</span>
+<span class="kd">stringdef</span> <span class="n">&#39;</span>    <span class="mh">hex</span> <span class="s">&#39;44C&#39;</span>
+<span class="kd">stringdef</span> <span class="n">e`</span>   <span class="mh">hex</span> <span class="s">&#39;44D&#39;</span>
+<span class="kd">stringdef</span> <span class="n">iu</span>   <span class="mh">hex</span> <span class="s">&#39;44E&#39;</span>
+<span class="kd">stringdef</span> <span class="n">ia</span>   <span class="mh">hex</span> <span class="s">&#39;44F&#39;</span>
+
+<span class="kd">routines</span> <span class="p">(</span> <span class="n">mark_regions</span> <span class="n">R2</span>
+           <span class="n">perfective_gerund</span>
+           <span class="n">adjective</span>
+           <span class="n">adjectival</span>
+           <span class="n">reflexive</span>
+           <span class="n">verb</span>
+           <span class="n">noun</span>
+           <span class="n">derivational</span>
+           <span class="n">tidy_up</span>
+<span class="p">)</span>
+
+<span class="kd">externals</span> <span class="p">(</span> <span class="n">stem</span> <span class="p">)</span>
+
+<span class="kd">integers</span> <span class="p">(</span> <span class="n">pV</span> <span class="n">p2</span> <span class="p">)</span>
+
+<span class="kd">groupings</span> <span class="p">(</span> <span class="n">v</span> <span class="p">)</span>
+
+<span class="kd">define</span> <span class="n">v</span> <span class="s">&#39;{a}{e}{i}{o}{u}{y}{e`}{iu}{ia}&#39;</span>
+
+<span class="kd">define</span> <span class="n">mark_regions</span> <span class="k">as</span> <span class="p">(</span>
+
+    <span class="o">$</span><span class="n">pV</span> <span class="o">=</span> <span class="ow">limit</span>
+    <span class="o">$</span><span class="n">p2</span> <span class="o">=</span> <span class="ow">limit</span>
+    <span class="ow">do</span> <span class="p">(</span>
+        <span class="ow">gopast</span> <span class="n">v</span>  <span class="ow">setmark</span> <span class="n">pV</span>  <span class="ow">gopast</span> <span class="ow">non-</span><span class="n">v</span>
+        <span class="ow">gopast</span> <span class="n">v</span>  <span class="ow">gopast</span> <span class="ow">non-</span><span class="n">v</span>  <span class="ow">setmark</span> <span class="n">p2</span>
+       <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="kd">backwardmode</span> <span class="p">(</span>
+
+    <span class="kd">define</span> <span class="n">R2</span> <span class="k">as</span> <span class="o">$</span><span class="n">p2</span> <span class="o">&lt;=</span> <span class="ow">cursor</span>
+
+    <span class="kd">define</span> <span class="n">perfective_gerund</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;{v}&#39;</span>
+            <span class="s">&#39;{v}{sh}{i}&#39;</span>
+            <span class="s">&#39;{v}{sh}{i}{s}{&#39;}&#39;</span>
+                <span class="p">(</span><span class="s">&#39;{a}&#39;</span> <span class="ow">or</span> <span class="s">&#39;{ia}&#39;</span> <span class="ow">delete</span><span class="p">)</span>
+            <span class="s">&#39;{i}{v}&#39;</span>
+            <span class="s">&#39;{i}{v}{sh}{i}&#39;</span>
+            <span class="s">&#39;{i}{v}{sh}{i}{s}{&#39;}&#39;</span>
+            <span class="s">&#39;{y}{v}&#39;</span>
+            <span class="s">&#39;{y}{v}{sh}{i}&#39;</span>
+            <span class="s">&#39;{y}{v}{sh}{i}{s}{&#39;}&#39;</span>
+                <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">adjective</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;{e}{e}&#39;</span> <span class="s">&#39;{i}{e}&#39;</span> <span class="s">&#39;{y}{e}&#39;</span> <span class="s">&#39;{o}{e}&#39;</span> <span class="s">&#39;{i}{m}{i}&#39;</span> <span class="s">&#39;{y}{m}{i}&#39;</span>
+            <span class="s">&#39;{e}{i`}&#39;</span> <span class="s">&#39;{i}{i`}&#39;</span> <span class="s">&#39;{y}{i`}&#39;</span> <span class="s">&#39;{o}{i`}&#39;</span> <span class="s">&#39;{e}{m}&#39;</span> <span class="s">&#39;{i}{m}&#39;</span>
+            <span class="s">&#39;{y}{m}&#39;</span> <span class="s">&#39;{o}{m}&#39;</span> <span class="s">&#39;{e}{g}{o}&#39;</span> <span class="s">&#39;{o}{g}{o}&#39;</span> <span class="s">&#39;{e}{m}{u}&#39;</span>
+            <span class="s">&#39;{o}{m}{u}&#39;</span> <span class="s">&#39;{i}{kh}&#39;</span> <span class="s">&#39;{y}{kh}&#39;</span> <span class="s">&#39;{u}{iu}&#39;</span> <span class="s">&#39;{iu}{iu}&#39;</span> <span class="s">&#39;{a}{ia}&#39;</span>
+            <span class="s">&#39;{ia}{ia}&#39;</span>
+                        <span class="c1">// and -</span>
+            <span class="s">&#39;{o}{iu}&#39;</span>   <span class="c1">// - which is somewhat archaic</span>
+            <span class="s">&#39;{e}{iu}&#39;</span>   <span class="c1">// - soft form of {o}{iu}</span>
+                <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">adjectival</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="n">adjective</span>
+
+        <span class="cm">/* of the participle forms, em, vsh, ivsh, yvsh are readily removable.</span>
+<span class="cm">           nn, {iu}shch, shch, u{iu}shch can be removed, with a small proportion of</span>
+<span class="cm">           errors. Removing im, uem, enn creates too many errors.</span>
+<span class="cm">        */</span>
+
+        <span class="ow">try</span> <span class="p">(</span>
+            <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+                <span class="s">&#39;{e}{m}&#39;</span>                  <span class="c1">// present passive participle</span>
+                <span class="s">&#39;{n}{n}&#39;</span>                  <span class="c1">// adjective from past passive participle</span>
+                <span class="s">&#39;{v}{sh}&#39;</span>                 <span class="c1">// past active participle</span>
+                <span class="s">&#39;{iu}{shch}&#39;</span> <span class="s">&#39;{shch}&#39;</span>     <span class="c1">// present active participle</span>
+                    <span class="p">(</span><span class="s">&#39;{a}&#39;</span> <span class="ow">or</span> <span class="s">&#39;{ia}&#39;</span> <span class="ow">delete</span><span class="p">)</span>
+
+     <span class="c1">//but not  &#39;{i}{m}&#39; &#39;{u}{e}{m}&#39;      // present passive participle</span>
+     <span class="c1">//or       &#39;{e}{n}{n}&#39;               // adjective from past passive participle</span>
+
+                <span class="s">&#39;{i}{v}{sh}&#39;</span> <span class="s">&#39;{y}{v}{sh}&#39;</span><span class="c1">// past active participle</span>
+                <span class="s">&#39;{u}{iu}{shch}&#39;</span>          <span class="c1">// present active participle</span>
+                    <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">reflexive</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;{s}{ia}&#39;</span>
+            <span class="s">&#39;{s}{&#39;}&#39;</span>
+                <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">verb</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;{l}{a}&#39;</span> <span class="s">&#39;{n}{a}&#39;</span> <span class="s">&#39;{e}{t}{e}&#39;</span> <span class="s">&#39;{i`}{t}{e}&#39;</span> <span class="s">&#39;{l}{i}&#39;</span> <span class="s">&#39;{i`}&#39;</span>
+            <span class="s">&#39;{l}&#39;</span> <span class="s">&#39;{e}{m}&#39;</span> <span class="s">&#39;{n}&#39;</span> <span class="s">&#39;{l}{o}&#39;</span> <span class="s">&#39;{n}{o}&#39;</span> <span class="s">&#39;{e}{t}&#39;</span> <span class="s">&#39;{iu}{t}&#39;</span>
+            <span class="s">&#39;{n}{y}&#39;</span> <span class="s">&#39;{t}{&#39;}&#39;</span> <span class="s">&#39;{e}{sh}{&#39;}&#39;</span>
+
+            <span class="s">&#39;{n}{n}{o}&#39;</span>
+                <span class="p">(</span><span class="s">&#39;{a}&#39;</span> <span class="ow">or</span> <span class="s">&#39;{ia}&#39;</span> <span class="ow">delete</span><span class="p">)</span>
+
+            <span class="s">&#39;{i}{l}{a}&#39;</span> <span class="s">&#39;{y}{l}{a}&#39;</span> <span class="s">&#39;{e}{n}{a}&#39;</span> <span class="s">&#39;{e}{i`}{t}{e}&#39;</span>
+            <span class="s">&#39;{u}{i`}{t}{e}&#39;</span> <span class="s">&#39;{i}{t}{e}&#39;</span> <span class="s">&#39;{i}{l}{i}&#39;</span> <span class="s">&#39;{y}{l}{i}&#39;</span> <span class="s">&#39;{e}{i`}&#39;</span>
+            <span class="s">&#39;{u}{i`}&#39;</span> <span class="s">&#39;{i}{l}&#39;</span> <span class="s">&#39;{y}{l}&#39;</span> <span class="s">&#39;{i}{m}&#39;</span> <span class="s">&#39;{y}{m}&#39;</span> <span class="s">&#39;{e}{n}&#39;</span>
+            <span class="s">&#39;{i}{l}{o}&#39;</span> <span class="s">&#39;{y}{l}{o}&#39;</span> <span class="s">&#39;{e}{n}{o}&#39;</span> <span class="s">&#39;{ia}{t}&#39;</span> <span class="s">&#39;{u}{e}{t}&#39;</span>
+            <span class="s">&#39;{u}{iu}{t}&#39;</span> <span class="s">&#39;{i}{t}&#39;</span> <span class="s">&#39;{y}{t}&#39;</span> <span class="s">&#39;{e}{n}{y}&#39;</span> <span class="s">&#39;{i}{t}{&#39;}&#39;</span>
+            <span class="s">&#39;{y}{t}{&#39;}&#39;</span> <span class="s">&#39;{i}{sh}{&#39;}&#39;</span> <span class="s">&#39;{u}{iu}&#39;</span> <span class="s">&#39;{iu}&#39;</span>
+                <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+            <span class="cm">/* note the short passive participle tests:</span>
+<span class="cm">               &#39;{n}{a}&#39; &#39;{n}&#39; &#39;{n}{o}&#39; &#39;{n}{y}&#39;</span>
+<span class="cm">               &#39;{e}{n}{a}&#39; &#39;{e}{n}&#39; &#39;{e}{n}{o}&#39; &#39;{e}{n}{y}&#39;</span>
+<span class="cm">            */</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">noun</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;{a}&#39;</span> <span class="s">&#39;{e}{v}&#39;</span> <span class="s">&#39;{o}{v}&#39;</span> <span class="s">&#39;{i}{e}&#39;</span> <span class="s">&#39;{&#39;}{e}&#39;</span> <span class="s">&#39;{e}&#39;</span>
+            <span class="s">&#39;{i}{ia}{m}{i}&#39;</span> <span class="s">&#39;{ia}{m}{i}&#39;</span> <span class="s">&#39;{a}{m}{i}&#39;</span> <span class="s">&#39;{e}{i}&#39;</span> <span class="s">&#39;{i}{i}&#39;</span>
+            <span class="s">&#39;{i}&#39;</span> <span class="s">&#39;{i}{e}{i`}&#39;</span> <span class="s">&#39;{e}{i`}&#39;</span> <span class="s">&#39;{o}{i`}&#39;</span> <span class="s">&#39;{i}{i`}&#39;</span> <span class="s">&#39;{i`}&#39;</span>
+            <span class="s">&#39;{i}{ia}{m}&#39;</span> <span class="s">&#39;{ia}{m}&#39;</span> <span class="s">&#39;{i}{e}{m}&#39;</span> <span class="s">&#39;{e}{m}&#39;</span> <span class="s">&#39;{a}{m}&#39;</span> <span class="s">&#39;{o}{m}&#39;</span>
+            <span class="s">&#39;{o}&#39;</span> <span class="s">&#39;{u}&#39;</span> <span class="s">&#39;{a}{kh}&#39;</span> <span class="s">&#39;{i}{ia}{kh}&#39;</span> <span class="s">&#39;{ia}{kh}&#39;</span> <span class="s">&#39;{y}&#39;</span> <span class="s">&#39;{&#39;}&#39;</span>
+            <span class="s">&#39;{i}{iu}&#39;</span> <span class="s">&#39;{&#39;}{iu}&#39;</span> <span class="s">&#39;{iu}&#39;</span> <span class="s">&#39;{i}{ia}&#39;</span> <span class="s">&#39;{&#39;}{ia}&#39;</span> <span class="s">&#39;{ia}&#39;</span>
+                <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+            <span class="cm">/* the small class of neuter forms &#39;{e}{n}{i}&#39; &#39;{e}{n}{e}{m}&#39;</span>
+<span class="cm">               &#39;{e}{n}{a}&#39; &#39;{e}{n}&#39; &#39;{e}{n}{a}{m}&#39; &#39;{e}{n}{a}{m}{i}&#39; &#39;{e}{n}{a}{x}&#39;</span>
+<span class="cm">               omitted - they only occur on 12 words.</span>
+<span class="cm">            */</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">derivational</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="n">R2</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;{o}{s}{t}&#39;</span>
+            <span class="s">&#39;{o}{s}{t}{&#39;}&#39;</span>
+                <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">tidy_up</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+
+            <span class="s">&#39;{e}{i`}{sh}&#39;</span>
+            <span class="s">&#39;{e}{i`}{sh}{e}&#39;</span>  <span class="c1">// superlative forms</span>
+               <span class="p">(</span><span class="ow">delete</span>
+                <span class="p">[</span><span class="s">&#39;{n}&#39;</span><span class="p">]</span> <span class="s">&#39;{n}&#39;</span> <span class="ow">delete</span>
+               <span class="p">)</span>
+            <span class="s">&#39;{n}&#39;</span>
+               <span class="p">(</span><span class="s">&#39;{n}&#39;</span> <span class="ow">delete</span><span class="p">)</span> <span class="c1">// e.g. -nno endings</span>
+            <span class="s">&#39;{&#39;}&#39;</span>
+               <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>  <span class="c1">// with some slight false conflations</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="kd">define</span> <span class="n">stem</span> <span class="k">as</span> <span class="p">(</span>
+
+    <span class="ow">do</span> <span class="n">mark_regions</span>
+    <span class="ow">backwards</span> <span class="ow">setlimit</span> <span class="ow">tomark</span> <span class="n">pV</span> <span class="k">for</span> <span class="p">(</span>
+        <span class="ow">do</span> <span class="p">(</span>
+             <span class="n">perfective_gerund</span> <span class="ow">or</span>
+             <span class="p">(</span> <span class="ow">try</span> <span class="n">reflexive</span>
+               <span class="n">adjectival</span> <span class="ow">or</span> <span class="n">verb</span> <span class="ow">or</span> <span class="n">noun</span>
+             <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="ow">try</span><span class="p">([</span> <span class="s">&#39;{i}&#39;</span> <span class="p">]</span> <span class="ow">delete</span><span class="p">)</span>
+        <span class="c1">// because noun ending -i{iu} is being treated as verb ending -{iu}</span>
+
+        <span class="ow">do</span> <span class="n">derivational</span>
+        <span class="ow">do</span> <span class="n">tidy_up</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</body>
+</html>

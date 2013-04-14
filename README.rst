@@ -33,7 +33,15 @@ License
 
 BSD 2-Clause License
 
-See LICENSE
+See ``LICENSE``
+
+
+All Snowball codes under the directory ``./sample_output`` are
+licensed by BSD 2-Clause License with
+Copyright (c) 2001, Dr Martin Porter and
+Copyright (c) 2002, Richard Boulton.
+
+See ``./sample_output/license.php``
 
 Authors
 =======

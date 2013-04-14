@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=latin1">
+  <style type="text/css">
+td.linenos { background-color: #f0f0f0; padding-right: 10px; }
+span.lineno { background-color: #f0f0f0; padding: 0 5px 0 5px; }
+pre { line-height: 125%; }
+body .hll { background-color: #ffffcc }
+body  { background: #f8f8f8; }
+body .c { color: #408080; font-style: italic } /* Comment */
+body .err { border: 1px solid #FF0000 } /* Error */
+body .k { color: #008000; font-weight: bold } /* Keyword */
+body .o { color: #666666 } /* Operator */
+body .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+body .cp { color: #BC7A00 } /* Comment.Preproc */
+body .c1 { color: #408080; font-style: italic } /* Comment.Single */
+body .cs { color: #408080; font-style: italic } /* Comment.Special */
+body .gd { color: #A00000 } /* Generic.Deleted */
+body .ge { font-style: italic } /* Generic.Emph */
+body .gr { color: #FF0000 } /* Generic.Error */
+body .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+body .gi { color: #00A000 } /* Generic.Inserted */
+body .go { color: #888888 } /* Generic.Output */
+body .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+body .gs { font-weight: bold } /* Generic.Strong */
+body .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+body .gt { color: #0044DD } /* Generic.Traceback */
+body .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+body .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+body .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+body .kp { color: #008000 } /* Keyword.Pseudo */
+body .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+body .kt { color: #B00040 } /* Keyword.Type */
+body .m { color: #666666 } /* Literal.Number */
+body .s { color: #BA2121 } /* Literal.String */
+body .na { color: #7D9029 } /* Name.Attribute */
+body .nb { color: #008000 } /* Name.Builtin */
+body .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+body .no { color: #880000 } /* Name.Constant */
+body .nd { color: #AA22FF } /* Name.Decorator */
+body .ni { color: #999999; font-weight: bold } /* Name.Entity */
+body .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+body .nf { color: #0000FF } /* Name.Function */
+body .nl { color: #A0A000 } /* Name.Label */
+body .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+body .nt { color: #008000; font-weight: bold } /* Name.Tag */
+body .nv { color: #19177C } /* Name.Variable */
+body .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+body .w { color: #bbbbbb } /* Text.Whitespace */
+body .mf { color: #666666 } /* Literal.Number.Float */
+body .mh { color: #666666 } /* Literal.Number.Hex */
+body .mi { color: #666666 } /* Literal.Number.Integer */
+body .mo { color: #666666 } /* Literal.Number.Oct */
+body .sb { color: #BA2121 } /* Literal.String.Backtick */
+body .sc { color: #BA2121 } /* Literal.String.Char */
+body .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+body .s2 { color: #BA2121 } /* Literal.String.Double */
+body .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+body .sh { color: #BA2121 } /* Literal.String.Heredoc */
+body .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+body .sx { color: #008000 } /* Literal.String.Other */
+body .sr { color: #BB6688 } /* Literal.String.Regex */
+body .s1 { color: #BA2121 } /* Literal.String.Single */
+body .ss { color: #19177C } /* Literal.String.Symbol */
+body .bp { color: #008000 } /* Name.Builtin.Pseudo */
+body .vc { color: #19177C } /* Name.Variable.Class */
+body .vg { color: #19177C } /* Name.Variable.Global */
+body .vi { color: #19177C } /* Name.Variable.Instance */
+body .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+  </style>
+</head>
+<body>
+<h2></h2>
+
+<div class="highlight"><pre><span class="kd">integers</span> <span class="p">(</span> <span class="n">p1</span> <span class="n">p2</span> <span class="p">)</span>
+<span class="kd">booleans</span> <span class="p">(</span> <span class="n">Y_found</span> <span class="p">)</span>
+
+<span class="kd">routines</span> <span class="p">(</span>
+   <span class="n">shortv</span>
+   <span class="n">R1</span> <span class="n">R2</span>
+   <span class="n">Step_1a</span> <span class="n">Step_1b</span> <span class="n">Step_1c</span> <span class="n">Step_2</span> <span class="n">Step_3</span> <span class="n">Step_4</span> <span class="n">Step_5a</span> <span class="n">Step_5b</span>
+<span class="p">)</span>
+
+<span class="kd">externals</span> <span class="p">(</span> <span class="n">stem</span> <span class="p">)</span>
+
+<span class="kd">groupings</span> <span class="p">(</span> <span class="n">v</span> <span class="n">v_WXY</span> <span class="p">)</span>
+
+<span class="kd">define</span> <span class="n">v</span>        <span class="s">&#39;aeiouy&#39;</span>
+<span class="kd">define</span> <span class="n">v_WXY</span>    <span class="n">v</span> <span class="o">+</span> <span class="s">&#39;wxY&#39;</span>
+
+<span class="kd">backwardmode</span> <span class="p">(</span>
+
+    <span class="kd">define</span> <span class="n">shortv</span> <span class="k">as</span> <span class="p">(</span> <span class="ow">non-</span><span class="n">v_WXY</span> <span class="n">v</span> <span class="ow">non-</span><span class="n">v</span> <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">R1</span> <span class="k">as</span> <span class="o">$</span><span class="n">p1</span> <span class="o">&lt;=</span> <span class="ow">cursor</span>
+    <span class="kd">define</span> <span class="n">R2</span> <span class="k">as</span> <span class="o">$</span><span class="n">p2</span> <span class="o">&lt;=</span> <span class="ow">cursor</span>
+
+    <span class="kd">define</span> <span class="n">Step_1a</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;sses&#39;</span> <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ss&#39;</span><span class="p">)</span>
+            <span class="s">&#39;ies&#39;</span>  <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;i&#39;</span><span class="p">)</span>
+            <span class="s">&#39;ss&#39;</span>   <span class="p">()</span>
+            <span class="s">&#39;s&#39;</span>    <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">Step_1b</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;eed&#39;</span>  <span class="p">(</span><span class="n">R1</span> <span class="o">&lt;-</span><span class="s">&#39;ee&#39;</span><span class="p">)</span>
+            <span class="s">&#39;ed&#39;</span>
+            <span class="s">&#39;ing&#39;</span> <span class="p">(</span>
+                <span class="ow">test</span> <span class="ow">gopast</span> <span class="n">v</span>  <span class="ow">delete</span>
+                <span class="ow">test</span> <span class="ow">substring</span> <span class="k">among</span><span class="p">(</span>
+                    <span class="s">&#39;at&#39;</span> <span class="s">&#39;bl&#39;</span> <span class="s">&#39;iz&#39;</span>
+                         <span class="p">(</span><span class="o">&lt;+</span> <span class="s">&#39;e&#39;</span><span class="p">)</span>
+                    <span class="s">&#39;bb&#39;</span> <span class="s">&#39;dd&#39;</span> <span class="s">&#39;ff&#39;</span> <span class="s">&#39;gg&#39;</span> <span class="s">&#39;mm&#39;</span> <span class="s">&#39;nn&#39;</span> <span class="s">&#39;pp&#39;</span> <span class="s">&#39;rr&#39;</span> <span class="s">&#39;tt&#39;</span>
+                    <span class="c1">// ignoring double c, h, j, k, q, v, w, and x</span>
+                         <span class="p">([</span><span class="ow">next</span><span class="p">]</span>  <span class="ow">delete</span><span class="p">)</span>
+                    <span class="s">&#39;&#39;</span>   <span class="p">(</span><span class="ow">atmark</span> <span class="n">p1</span>  <span class="ow">test</span> <span class="n">shortv</span>  <span class="o">&lt;+</span> <span class="s">&#39;e&#39;</span><span class="p">)</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">Step_1c</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="s">&#39;y&#39;</span> <span class="ow">or</span> <span class="s">&#39;Y&#39;</span><span class="p">]</span>
+        <span class="ow">gopast</span> <span class="n">v</span>
+        <span class="o">&lt;-</span><span class="s">&#39;i&#39;</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">Step_2</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="n">R1</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;tional&#39;</span>  <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;tion&#39;</span><span class="p">)</span>
+            <span class="s">&#39;enci&#39;</span>    <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ence&#39;</span><span class="p">)</span>
+            <span class="s">&#39;anci&#39;</span>    <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ance&#39;</span><span class="p">)</span>
+            <span class="s">&#39;abli&#39;</span>    <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;able&#39;</span><span class="p">)</span>
+            <span class="s">&#39;entli&#39;</span>   <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ent&#39;</span><span class="p">)</span>
+            <span class="s">&#39;eli&#39;</span>     <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;e&#39;</span><span class="p">)</span>
+            <span class="s">&#39;izer&#39;</span> <span class="s">&#39;ization&#39;</span>
+                      <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ize&#39;</span><span class="p">)</span>
+            <span class="s">&#39;ational&#39;</span> <span class="s">&#39;ation&#39;</span> <span class="s">&#39;ator&#39;</span>
+                      <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ate&#39;</span><span class="p">)</span>
+            <span class="s">&#39;alli&#39;</span>    <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;al&#39;</span><span class="p">)</span>
+            <span class="s">&#39;alism&#39;</span> <span class="s">&#39;aliti&#39;</span>
+                      <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;al&#39;</span><span class="p">)</span>
+            <span class="s">&#39;fulness&#39;</span> <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ful&#39;</span><span class="p">)</span>
+            <span class="s">&#39;ousli&#39;</span> <span class="s">&#39;ousness&#39;</span>
+                      <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ous&#39;</span><span class="p">)</span>
+            <span class="s">&#39;iveness&#39;</span> <span class="s">&#39;iviti&#39;</span>
+                      <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ive&#39;</span><span class="p">)</span>
+            <span class="s">&#39;biliti&#39;</span>  <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ble&#39;</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">Step_3</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="n">R1</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;alize&#39;</span>   <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;al&#39;</span><span class="p">)</span>
+            <span class="s">&#39;icate&#39;</span> <span class="s">&#39;iciti&#39;</span> <span class="s">&#39;ical&#39;</span>
+                      <span class="p">(</span><span class="o">&lt;-</span><span class="s">&#39;ic&#39;</span><span class="p">)</span>
+            <span class="s">&#39;ative&#39;</span> <span class="s">&#39;ful&#39;</span> <span class="s">&#39;ness&#39;</span>
+                      <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">Step_4</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="ow">substring</span><span class="p">]</span> <span class="n">R2</span> <span class="k">among</span> <span class="p">(</span>
+            <span class="s">&#39;al&#39;</span> <span class="s">&#39;ance&#39;</span> <span class="s">&#39;ence&#39;</span> <span class="s">&#39;er&#39;</span> <span class="s">&#39;ic&#39;</span> <span class="s">&#39;able&#39;</span> <span class="s">&#39;ible&#39;</span> <span class="s">&#39;ant&#39;</span> <span class="s">&#39;ement&#39;</span>
+            <span class="s">&#39;ment&#39;</span> <span class="s">&#39;ent&#39;</span> <span class="s">&#39;ou&#39;</span> <span class="s">&#39;ism&#39;</span> <span class="s">&#39;ate&#39;</span> <span class="s">&#39;iti&#39;</span> <span class="s">&#39;ous&#39;</span> <span class="s">&#39;ive&#39;</span> <span class="s">&#39;ize&#39;</span>
+                      <span class="p">(</span><span class="ow">delete</span><span class="p">)</span>
+            <span class="s">&#39;ion&#39;</span>     <span class="p">(</span><span class="s">&#39;s&#39;</span> <span class="ow">or</span> <span class="s">&#39;t&#39;</span> <span class="ow">delete</span><span class="p">)</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">Step_5a</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="s">&#39;e&#39;</span><span class="p">]</span>
+        <span class="n">R2</span> <span class="ow">or</span> <span class="p">(</span><span class="n">R1</span> <span class="ow">not</span> <span class="n">shortv</span><span class="p">)</span>
+        <span class="ow">delete</span>
+    <span class="p">)</span>
+
+    <span class="kd">define</span> <span class="n">Step_5b</span> <span class="k">as</span> <span class="p">(</span>
+        <span class="p">[</span><span class="s">&#39;l&#39;</span><span class="p">]</span>
+        <span class="n">R2</span> <span class="s">&#39;l&#39;</span>
+        <span class="ow">delete</span>
+    <span class="p">)</span>
+<span class="p">)</span>
+
+<span class="kd">define</span> <span class="n">stem</span> <span class="k">as</span> <span class="p">(</span>
+
+    <span class="ow">unset</span> <span class="n">Y_found</span>
+    <span class="ow">do</span> <span class="p">(</span> <span class="p">[</span><span class="s">&#39;y&#39;</span><span class="p">]</span> <span class="o">&lt;-</span><span class="s">&#39;Y&#39;</span> <span class="ow">set</span> <span class="n">Y_found</span><span class="p">)</span>
+    <span class="ow">do</span> <span class="ow">repeat</span><span class="p">(</span><span class="ow">goto</span> <span class="p">(</span><span class="n">v</span> <span class="p">[</span><span class="s">&#39;y&#39;</span><span class="p">])</span> <span class="o">&lt;-</span><span class="s">&#39;Y&#39;</span> <span class="ow">set</span> <span class="n">Y_found</span><span class="p">)</span>
+
+    <span class="o">$</span><span class="n">p1</span> <span class="o">=</span> <span class="ow">limit</span>
+    <span class="o">$</span><span class="n">p2</span> <span class="o">=</span> <span class="ow">limit</span>
+    <span class="ow">do</span><span class="p">(</span>
+        <span class="ow">gopast</span> <span class="n">v</span>  <span class="ow">gopast</span> <span class="ow">non-</span><span class="n">v</span>  <span class="ow">setmark</span> <span class="n">p1</span>
+        <span class="ow">gopast</span> <span class="n">v</span>  <span class="ow">gopast</span> <span class="ow">non-</span><span class="n">v</span>  <span class="ow">setmark</span> <span class="n">p2</span>
+    <span class="p">)</span>
+
+    <span class="ow">backwards</span> <span class="p">(</span>
+        <span class="ow">do</span> <span class="n">Step_1a</span>
+        <span class="ow">do</span> <span class="n">Step_1b</span>
+        <span class="ow">do</span> <span class="n">Step_1c</span>
+        <span class="ow">do</span> <span class="n">Step_2</span>
+        <span class="ow">do</span> <span class="n">Step_3</span>
+        <span class="ow">do</span> <span class="n">Step_4</span>
+        <span class="ow">do</span> <span class="n">Step_5a</span>
+        <span class="ow">do</span> <span class="n">Step_5b</span>
+    <span class="p">)</span>
+
+    <span class="ow">do</span><span class="p">(</span><span class="n">Y_found</span>  <span class="ow">repeat</span><span class="p">(</span><span class="ow">goto</span> <span class="p">([</span><span class="s">&#39;Y&#39;</span><span class="p">])</span> <span class="o">&lt;-</span><span class="s">&#39;y&#39;</span><span class="p">))</span>
+
+<span class="p">)</span>
+</pre></div>
+</body>
+</html>
