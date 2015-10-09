@@ -2,7 +2,7 @@ Pygments Snowball Plugin
 ========================
 
 `Pygments <http://pygments.org/>`_ Lexer Plugin
-for `Snowball <http://snowball.tartarus.org/>`_,
+for `Snowball <http://snowballstem.org/>`_,
 a domain-specific language for
 `stemming words <http://en.wikipedia.org/wiki/Stemming>`_.
 
